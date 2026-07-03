@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install and validate backend",
+			"type": "shell",
+			"command": "npm install && npm test",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install dependencies",
+			"type": "shell",
+			"command": "cd /d \"c:\\Users\\bruno\\OneDrive\\Pagina Web ModulHorm\" && \"C:\\Program Files\\nodejs\\npm.cmd\" install",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

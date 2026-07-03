@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ModulHorm construye obras sólidas con moldes de precisión, viviendas, galpones, muros, piscinas y proyectos personalizados en Argentina.">
+  <meta name="keywords" content="construcción, hormigón, moldes, galpones, piscinas, vivienda, obras, Argentina">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="ModulHorm | Construcción de Obras Sólidas">
+  <meta property="og:description" content="Construcción con moldes de precisión para viviendas, galpones, muros, piscinas y proyectos personalizados.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ModulHorm | Construcción de Obras Sólidas">
+  <meta name="twitter:description" content="Obras sólidas, rápidas y con terminación premium para proyectos de construcción en Argentina.">
+  <link rel="canonical" href="https://tu-dominio.com/">
+  <title>ModulHorm | Construcción de Obras Sólidas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --dark: #04070b; --surface: #111827; --surface-soft: #182330; --text: #ffffff; --muted: #edf2f7; --accent: #ffca70; --accent-soft: #ffe2b3; --border: rgba(255,255,255,0.14); --shadow: 0 24px 80px rgba(0,0,0,0.35); }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Inter', sans-serif; background: linear-gradient(180deg, #02050a 0%, #050b12 45%, #020508 100%); color: var(--text); line-height: 1.65; }
+    img, video { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .page { overflow-x: hidden; }
+    header { position: fixed; inset: 0 0 auto 0; z-index: 99; width: 100%; backdrop-filter: blur(18px); background: rgba(2,5,10,0.96); border-bottom: 1px solid rgba(255,255,255,0.14); box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+    .navbar { max-width: 1280px; margin: 0 auto; padding: 22px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 16px; }
+    .brand-mark { width: 42px; height: 42px; border-radius: 12px; background: linear-gradient(135deg, rgba(196,138,64,.95), rgba(233,199,131,.95)); display: grid; place-items: center; font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--dark); }
+    .brand-text { display: flex; flex-direction: column; }
+    .brand-name { font-size: 16px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .brand-sub { font-size: 12px; color: var(--muted); letter-spacing: 0.14em; text-transform: uppercase; }
+    .nav-links { display: flex; gap: 28px; align-items: center; font-size: 13px; color: #ffffff; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,.75); }
+    .nav-links a:hover { color: var(--accent-soft); }
+    .header-actions { display: flex; align-items: center; gap: 14px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: none; border-radius: 999px; cursor: pointer; transition: transform .25s ease, box-shadow .25s ease, background .25s ease; }
+    .btn-primary { padding: 15px 26px; background: linear-gradient(135deg, #c48a40, #e5c692); color: #101010; font-weight: 700; box-shadow: 0 18px 40px rgba(196,138,64,.25); }
+    .btn-primary:hover { transform: translateY(-2px); }
+    .btn-secondary { padding: 15px 24px; background: rgba(255,255,255,0.10); color: var(--text); border: 1px solid rgba(255,255,255,0.18); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03); }
+    .hero { position: relative; min-height: 100vh; padding: 150px 32px 80px; display: grid; place-items: center; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,20,24,.90) 0%, rgba(18,20,24,.76) 65%, rgba(18,20,24,.8) 100%); pointer-events: none; }
+    .hero-bg { position: absolute; inset: 0; background: url('foto_construccion_fondo.jpeg') center/cover no-repeat; filter: brightness(.55); opacity: .95; }
+    .hero-content { position: relative; width: min(1080px, 100%); display: grid; gap: 26px; align-items: start; text-align: left; }
+    .hero-eyebrow { font-family: 'Playfair Display', serif; font-size: 14px; letter-spacing: .24em; text-transform: uppercase; color: #e4c897; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(42px, 4.4vw, 72px); line-height: 0.95; margin: 0; letter-spacing: -0.04em; }
+    .hero-title em { color: #e4c897; font-style: normal; }
+    .hero-text { max-width: 680px; color: rgba(255,255,255,0.86); font-size: 18px; }
+    .hero-links { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+    .hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 8px; }
+    .hero-stat { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 22px; padding: 22px 24px; display: grid; gap: 10px; }
+    .stat-number { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #fff; }
+    .stat-text { color: rgba(255,255,255,0.66); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+    section { padding: 100px 32px; }
+    .section-grid { max-width: 1280px; margin: 0 auto; display: grid; gap: 40px; }
+    .section-eyebrow { font-size: 13px; letter-spacing: .24em; text-transform: uppercase; color: var(--accent-soft); margin-bottom: 12px; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(32px, 3.5vw, 56px); margin: 0; line-height: 1.05; }
+    .section-lead { max-width: 720px; color: rgba(255,255,255,0.78); font-size: 17px; }
+    .cards-grid { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); }
+    .card img { width: 100%; height: 260px; object-fit: cover; }
+    .card-content { padding: 24px; }
+    .card-tag { display: inline-flex; padding: 8px 14px; border-radius: 999px; background: rgba(196,138,64,.16); color: #e5c692; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 18px; }
+    .card-title { font-size: 22px; margin: 0 0 12px; }
+    .card-copy { color: rgba(255,255,255,0.72); font-size: 15px; margin: 0 0 18px; }
+    .card-footer { display: grid; gap: 10px; }
+    .detail-row { display: flex; justify-content: space-between; color: rgba(255,255,255,0.65); font-size: 13px; }
+    .list-grid { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .feature { display: flex; gap: 18px; align-items: flex-start; }
+    .feature-icon { min-width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; background: rgba(196,138,64,.14); color: #e5c692; font-size: 20px; }
+    .feature-title { font-weight: 700; margin: 0 0 6px; }
+    .feature-text { margin: 0; color: rgba(255,255,255,0.74); }
+    .split-grid { display: grid; gap: 32px; grid-template-columns: 1.3fr .9fr; align-items: center; }
+    .video-card { position: relative; overflow: hidden; border-radius: 28px; box-shadow: var(--shadow); }
+    .video-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,20,24,0.15), rgba(18,20,24,0.7)); pointer-events: none; }
+    .video-card video { width: 100%; height: 100%; object-fit: cover; }
+    .video-caption { position: absolute; left: 24px; bottom: 24px; color: #fff; font-size: 14px; letter-spacing: .18em; text-transform: uppercase; z-index: 1; }
+    .video-caption h3 { margin: 0 0 12px; }
+    .video-caption p { margin: 0; }
+    .process-list { display: grid; gap: 18px; }
+    .process-step { display: flex; gap: 18px; padding: 26px; border-radius: 22px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); }
+    .step-badge { width: 54px; height: 54px; border-radius: 18px; background: rgba(196,138,64,.16); color: #e5c692; font-weight: 700; display: grid; place-items: center; font-size: 18px; flex-shrink: 0; }
+    .step-content h4 { margin: 0 0 10px; font-size: 18px; }
+    .step-content p { margin: 0; color: rgba(255,255,255,0.74); }
+    .testimonials-grid { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .testimonial-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 26px; padding: 28px; display: grid; gap: 18px; box-shadow: var(--shadow); }
+    .testimonial-avatar { display: grid; place-items: center; width: 62px; height: 62px; border-radius: 18px; background: rgba(255,255,255,0.08); color: var(--text); font-weight: 700; font-size: 20px; }
+    .testimonial-name { margin: 0; font-size: 16px; font-weight: 700; }
+    .testimonial-role { margin: 0; color: rgba(255,255,255,0.56); font-size: 13px; }
+    .testimonial-text { margin: 0; color: rgba(255,255,255,0.78); font-size: 15px; }
+    .gallery { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .gallery-item { position: relative; border-radius: 24px; overflow: hidden; min-height: 240px; }
+    .gallery-item::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,20,24,0.08), rgba(18,20,24,0.45)); }
+    .gallery-item img { height: 100%; object-fit: cover; }
+    .contact-panel { display: grid; grid-template-columns: 1.1fr .9fr; gap: 36px; align-items: start; }
+    .contact-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 30px; padding: 38px; box-shadow: var(--shadow); }
+    .contact-title { margin: 0 0 14px; font-size: 32px; }
+    .contact-copy { margin: 0 0 26px; color: rgba(255,255,255,0.75); }
+    .contact-list { display: grid; gap: 18px; margin-bottom: 30px; }
+    .contact-item { display: flex; gap: 16px; align-items: start; }
+    .contact-icon { width: 44px; height: 44px; border-radius: 14px; background: rgba(196,138,64,.16); display: grid; place-items: center; color: #e5c692; font-size: 20px; }
+    .contact-item p { margin: 0; color: rgba(255,255,255,0.75); font-size: 14px; }
+    .form-field { display: grid; gap: 10px; margin-bottom: 18px; }
+    .form-field label { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+    .form-field input, .form-field select, .form-field textarea { width: 100%; border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; background: rgba(255,255,255,0.04); color: var(--text); padding: 16px 18px; outline: none; transition: border-color .2s, background .2s; }
+    .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: rgba(196,138,64,.45); background: rgba(255,255,255,0.08); }
+    .form-field textarea { min-height: 140px; resize: vertical; }
+    .form-submit { margin-top: 10px; width: 100%; padding: 18px 0; background: linear-gradient(135deg, #c48a40, #e5c692); color: #101010; border-radius: 999px; border: none; cursor: pointer; font-weight: 700; letter-spacing: .04em; }
+    .footer { padding: 48px 32px 60px; background: #090b0f; border-top: 1px solid rgba(255,255,255,0.06); }
+    .footer-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; }
+    .footer-brand { display: grid; gap: 18px; }
+    .footer-brand p { max-width: 360px; color: rgba(255,255,255,0.68); }
+    .footer-links { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .footer-links a { color: rgba(255,255,255,0.68); font-size: 14px; }
+    .footer-links a:hover { color: var(--text); }
+    .footer-bottom { max-width: 1280px; margin: 0 auto; padding-top: 28px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; color: rgba(255,255,255,0.5); font-size: 13px; }
+    .notification { position: fixed; right: 24px; bottom: 24px; padding: 18px 22px; border-radius: 18px; background: rgba(24,28,36,.96); border: 1px solid rgba(255,255,255,0.12); color: #fff; box-shadow: 0 24px 60px rgba(0,0,0,.28); transform: translateY(24px); opacity: 0; transition: opacity .3s ease, transform .3s ease; z-index: 120; }
+    .notification.show { opacity: 1; transform: translateY(0); }
+    .hero-video { display: grid; gap: 26px; grid-template-columns: 1fr 1fr; margin-top: 32px; }
+    .hero-video { display: grid; gap: 26px; }
+    .hero-video video { width: 100%; min-height: 320px; object-fit: cover; border-radius: 26px; border: 1px solid rgba(255,255,255,0.12); box-shadow: var(--shadow); }
+    .hero-video .video-caption { padding: 24px; background: rgba(18,20,24,.78); border-radius: 24px; }
+    .hero-video .video-caption h3 { margin: 0 0 12px; font-size: 22px; }
+    .hero-video .video-caption p { margin: 0; color: rgba(255,255,255,0.76); }
+    @media (max-width: 1080px) { .cards-grid, .list-grid, .split-grid, .testimonials-grid, .gallery, .contact-panel, .footer-grid, .hero-video { grid-template-columns: 1fr; } .hero { padding-top: 140px; } }
+    @media (max-width: 720px) { .navbar { flex-wrap: wrap; justify-content: center; padding: 20px 20px; } .nav-links { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; gap: 18px; } .header-actions { width: 100%; justify-content: center; } .hero { padding: 120px 20px 64px; } section { padding: 80px 20px; } .hero-stats { grid-template-columns: 1fr; } .card img { height: 220px; } .hero-video { gap: 18px; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="navbar">
+        <a class="brand" href="#inicio">
+          <div class="brand-mark">MH</div>
+          <div class="brand-text">
+            <span class="brand-name">ModulHorm</span>
+            <span class="brand-sub">Construcción de precisión</span>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="#trabajo">Proyectos</a>
+          <a href="#porque">Por qué elegirnos</a>
+          <a href="#sistema">Nuestro sistema</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-secondary" href="#trabajo">Ver Nuestros Proyectos</a>
+          <a class="btn btn-primary" href="#contacto">Solicitar Presupuesto</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <span class="hero-eyebrow">Empresa líder en construcción con moldes de precisión</span>
+          <h1 class="hero-title">Construimos Proyectos Sólidos que <em>Perduran Generaciones</em></h1>
+          <p class="hero-text">Especialistas en construcción con sistemas de moldes de alta precisión, logrando obras más rápidas, resistentes y eficientes. Viviendas, galpones, muros, piscinas y proyectos personalizados con calidad constructiva superior.</p>
+          <div class="hero-links">
+            <a class="btn btn-primary" href="#contacto">Solicitar Presupuesto</a>
+            <a class="btn btn-secondary" href="#trabajo">Ver Nuestros Proyectos</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><div class="stat-number">18+</div><div class="stat-text">Años de experiencia</div></div>
+            <div class="hero-stat"><div class="stat-number">350+</div><div class="stat-text">Obras completadas</div></div>
+            <div class="hero-stat"><div class="stat-number">98%</div><div class="stat-text">Clientes satisfechos</div></div>
+          </div>
+        </div>
+      </section>
+      <section class="section-grid" id="trabajo">
+        <div>
+          <p class="section-eyebrow">Nuestro trabajo</p>
+          <h2 class="section-title">Obras reales con resultados visibles</h2>
+          <p class="section-lead">Descubrí cómo transformamos cada proyecto en una obra sólida, prototipada con moldes de alta precisión y terminaciones premium. Estos son los trabajos que generan confianza y cumplimiento.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Vivienda terminada" loading="lazy"><div class="card-content"><span class="card-tag">Vivienda</span><h3 class="card-title">Casa residencial terminada</h3><p class="card-copy">Construcción de vivienda familiar con sistema monolítico, calidad en cada junta y ambiente luminoso.</p><div class="card-footer"><div class="detail-row"><span>Área</span><span>180 m²</span></div><div class="detail-row"><span>Tiempo</span><span>4 meses</span></div></div></div></article>
+          <article class="card"><img src="muro.png.png" alt="Muro de hormigón" loading="lazy"><div class="card-content"><span class="card-tag">Muro</span><h3 class="card-title">Muro de hormigón armado</h3><p class="card-copy">Cerramiento perimetral de alta resistencia con terminación lisa, excelente aislación y control dimensional.</p><div class="card-footer"><div class="detail-row"><span>Altura</span><span>4.2 m</span></div><div class="detail-row"><span>Material</span><span>Hormigón H30</span></div></div></div></article>
+          <article class="card"><img src="galpon.png.png" alt="Galpón industrial" loading="lazy"><div class="card-content"><span class="card-tag">Galpón</span><h3 class="card-title">Nave industrial funcional</h3><p class="card-copy">Galpón con estructura robusta, alta capacidad de carga y tiempos de obra reducidos gracias a los moldes.</p><div class="card-footer"><div class="detail-row"><span>Superficie</span><span>2.200 m²</span></div><div class="detail-row"><span>Ciclos</span><span>3 meses</span></div></div></div></article>
+          <article class="card"><img src="industrial.png.png" alt="Obra industrial" loading="lazy"><div class="card-content"><span class="card-tag">Industrial</span><h3 class="card-title">Infraestructura industrial</h3><p class="card-copy">Estructura de hormigón de alta durabilidad para sectores productivos con exigencias de seguridad y servicio.</p><div class="card-footer"><div class="detail-row"><span>Uso</span><span>Industrial</span></div><div class="detail-row"><span>Resistencia</span><span>H35</span></div></div></div></article>
+          <article class="card"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Proyecto personalizado" loading="lazy"><div class="card-content"><span class="card-tag">Personalizado</span><h3 class="card-title">Proyecto a medida</h3><p class="card-copy">Soluciones singulares diseñadas para proyectos únicos con acabados, rendimiento y tiempos controlados.</p><div class="card-footer"><div class="detail-row"><span>Servicio</span><span>Turnkey</span></div><div class="detail-row"><span>Entrega</span><span>90 días</span></div></div></div></article>
+        </div>
+      </section>
+      <section class="section-grid" id="porque">
+        <div>
+          <p class="section-eyebrow">Por qué elegirnos</p>
+          <h2 class="section-title">Confianza, procesos sólidos y resultados seguros</h2>
+          <p class="section-lead">Nuestro foco es construir para clientes que necesitan obras reales: viviendas, galpones, muros, piscinas y estructuras de hormigón con entrega en tiempo y calidad certificada.</p>
+        </div>
+        <div class="list-grid">
+          <div class="feature"><span class="feature-icon">⚡</span><div><h4 class="feature-title">Construcción más rápida</h4><p class="feature-text">Reducimos el tiempo de obra con procesos optimizados y montaje veloz de moldes.</p></div></div>
+          <div class="feature"><span class="feature-icon">✨</span><div><h4 class="feature-title">Terminaciones premium</h4><p class="feature-text">Superficies lisas y juntas precisas que reflejan un trabajo de calidad profesional.</p></div></div>
+          <div class="feature"><span class="feature-icon">🏗️</span><div><h4 class="feature-title">Mayor resistencia estructural</h4><p class="feature-text">Obras diseñadas para soportar cargas exigentes y condiciones climáticas adversas.</p></div></div>
+          <div class="feature"><span class="feature-icon">👷</span><div><h4 class="feature-title">Equipo especializado</h4><p class="feature-text">Personal técnico con experiencia en estructuras de hormigón y sistemas de moldes avanzados.</p></div></div>
+          <div class="feature"><span class="feature-icon">🧱</span><div><h4 class="feature-title">Materiales certificados</h4><p class="feature-text">Solo utilizamos insumos homologados y procesos que cumplen normas nacionales.</p></div></div>
+          <div class="feature"><span class="feature-icon">📅</span><div><h4 class="feature-title">Cumplimiento de plazos</h4><p class="feature-text">Planificación transparente y disciplina de obra para entregas con fecha comprometida.</p></div></div>
+        </div>
+      </section>
+      <section class="section-grid" id="sistema">
+        <div class="split-grid">
+          <div>
+            <p class="section-eyebrow">Nuestro sistema</p>
+            <h2 class="section-title">Moldes de última generación para precisión y velocidad</h2>
+            <p class="section-lead">Implementamos sistemas de moldes avanzados que permiten verter hormigón con tolerancias milimétricas, eliminando retrabajos y garantizando acabados perfectos desde la primera etapa.</p>
+            <div class="list-grid" style="margin-top: 28px;">
+              <div class="feature"><span class="feature-icon">✅</span><div><h4 class="feature-title">Control dimensional</h4><p class="feature-text">Cada molde es diseñado para mantener la geometría exacta de la obra.</p></div></div>
+              <div class="feature"><span class="feature-icon">🚀</span><div><h4 class="feature-title">Velocidad de ejecución</h4><p class="feature-text">Los moldes reutilizables acortan los tiempos de montaje y vaciado.</p></div></div>
+              <div class="feature"><span class="feature-icon">♻️</span><div><h4 class="feature-title">Menos desperdicio</h4><p class="feature-text">Menor consumo de materiales gracias a procesos más limpios y eficientes.</p></div></div>
+            </div>
+          </div>
+          <div class="video-card">
+            <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1520150907646-ce1a1efc5d20?auto=format&fit=crop&w=1400&q=80">
+              <source src="WhatsApp%20Video%202026-06-18%20at%2012.42.04%20AM.mp4" type="video/mp4">
+            </video>
+            <div class="video-caption"><h3>Procesos en obra</h3><p>Grabaciones de levantamiento, vaciado y terminación que demuestran la calidad constructiva en cada etapa.</p></div>
+          </div>
+        </div>
+      </section>
+      <section class="section-grid" id="proceso">
+        <div>
+          <p class="section-eyebrow">Proceso de trabajo</p>
+          <h2 class="section-title">Cada proyecto avanza con pasos claros</h2>
+          <p class="section-lead">Transformamos una idea en una obra construida con procesos estructurados, desde el asesoramiento hasta la entrega final.</p>
+        </div>
+        <div class="process-list">
+          <div class="process-step"><span class="step-badge">01</span><div class="step-content"><h4>Asesoramiento inicial</h4><p>Analizamos tus necesidades, ubicación y presupuesto para definir la mejor solución constructiva.</p></div></div>
+          <div class="process-step"><span class="step-badge">02</span><div class="step-content"><h4>Diseño del proyecto</h4><p>Generamos propuestas técnicas y estéticas ajustadas a tus objetivos y al uso final.</p></div></div>
+          <div class="process-step"><span class="step-badge">03</span><div class="step-content"><h4>Presupuesto</h4><p>Ofrecemos costos transparentes con desglose total de materiales, mano de obra y plazos.</p></div></div>
+          <div class="process-step"><span class="step-badge">04</span><div class="step-content"><h4>Construcción</h4><p>Ejecutamos la obra con supervisión continua, cronogramas claros y controles de calidad diarios.</p></div></div>
+          <div class="process-step"><span class="step-badge">05</span><div class="step-content"><h4>Entrega final</h4><p>Realizamos la inspección conjunta y entregamos la obra con documentación técnica y garantía.</p></div></div>
+        </div>
+      </section>
+      <section class="section-grid" id="testimonios">
+        <div>
+          <p class="section-eyebrow">Testimonios</p>
+          <h2 class="section-title">Clientes que recomiendan cada obra</h2>
+          <p class="section-lead">Historias reales de quienes confiaron en ModulHorm y recibieron resultados sólidos, puntuales y de alta calidad.</p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card"><div style="display:flex;align-items:center;gap:16px;"><div class="testimonial-avatar">MR</div><div><p class="testimonial-name">Martín Rodríguez</p><p class="testimonial-role">Casa en Córdoba</p></div></div><p class="testimonial-text">"La obra avanzó más rápido de lo esperado y el resultado fue inmejorable. El equipo cumplió cada detalle y la casa quedó sólida como prometieron."</p></article>
+          <article class="testimonial-card"><div style="display:flex;align-items:center;gap:16px;"><div class="testimonial-avatar">SL</div><div><p class="testimonial-name">Sandra López</p><p class="testimonial-role">Galpón en Rosario</p></div></div><p class="testimonial-text">"Necesitábamos una nave industrial confiable y recibimos una estructura resistente en tiempo. El proceso fue ágil y la comunicación muy clara."</p></article>
+          <article class="testimonial-card"><div style="display:flex;align-items:center;gap:16px;"><div class="testimonial-avatar">CF</div><div><p class="testimonial-name">Carlos Ferreyra</p><p class="testimonial-role">Piscina en Mendoza</p></div></div><p class="testimonial-text">"La piscina quedó perfecta. La superficie es impecable y el proyecto se entregó sin demoras. Recomendados 100%."</p></article>
+        </div>
+      </section>
+      <section class="section-grid" id="galeria">
+        <div>
+          <p class="section-eyebrow">Galería</p>
+          <h2 class="section-title">Proyectos terminados con impacto visual</h2>
+          <p class="section-lead">Una colección de obras donde la estética, la resistencia y los plazos se combinaron para entregar resultados de alto nivel.</p>
+        </div>
+        <div class="gallery">
+          <div class="gallery-item"><img src="antes imagen.jpg" alt="Antes 1"></div>
+          <div class="gallery-item"><img src="despuesimagen.jpg" alt="Después 1"></div>
+          <div class="gallery-item"><img src="antes imagen2.jpg" alt="Antes 2"></div>
+          <div class="gallery-item"><img src="despues imagen 2.jpg" alt="Después 2"></div>
+          <div class="gallery-item"><img src="construccion.jpg" alt="Construcción"></div>
+          <div class="gallery-item"><img src="construccion2.jpg" alt="Construcción 2"></div>
+        </div>
+      </section>
+      <section class="section-grid" id="contacto">
+        <div class="contact-panel"><div class="contact-card"><p class="section-eyebrow">Contacto</p><h2 class="contact-title">Hablemos de tu próximo proyecto</h2><p class="contact-copy">Contanos qué necesitás construir y te prepararemos una propuesta con experiencia, calidad constructiva y plazo real.</p><div class="contact-list"><div class="contact-item"><span class="contact-icon">📞</span><p><strong>Teléfono / WhatsApp</strong><br>+598 97 856 649</p></div><div class="contact-item"><span class="contact-icon">✉️</span><p><strong>Correo</strong><br>modulhorm6@gmail.com</p></div><div class="contact-item"><span class="contact-icon">📍</span><p><strong>Operamos en</strong><br> Todo Uruguay</p></div></div></div><form class="contact-card" id="contactForm"><div class="form-field"><label for="fNombre">Nombre</label><input id="fNombre" name="nombre" type="text" placeholder="Tu nombre"></div><div class="form-field"><label for="fTelefono">Teléfono</label><input id="fTelefono" name="telefono" type="tel" placeholder="+598 97 ..."></div><div class="form-field"><label for="fEmail">Correo electrónico</label><input id="fEmail" name="email" type="email" placeholder="tu@email.com"></div><div class="form-field"><label for="fTipo">Tipo de proyecto</label><select id="fTipo" name="tipoProyecto"><option value="" selected disabled>Seleccioná una opción</option><option>Vivienda</option><option>Galpón</option><option>Muro</option><option>Piscina</option><option>Estructura de hormigón</option><option>Proyecto personalizado</option></select></div><div class="form-field"><label for="fMensaje">Mensaje</label><textarea id="fMensaje" name="mensaje" placeholder="Contanos los detalles de tu obra..."></textarea></div><button type="submit" class="form-submit">Quiero Construir Mi Proyecto</button></form></div>
+      </section>
+    </main>
+    <footer class="footer"><div class="footer-grid"><div class="footer-brand"><div class="brand-name">ModulHorm</div><p>Empresa constructora especializada en sistemas de moldes de alta precisión. Creamos obras sólidas, eficientes y con terminación premium.</p></div><div><p class="section-eyebrow">Servicios</p><ul class="footer-links"><li><a href="#trabajo">Viviendas</a></li><li><a href="#trabajo">Muros</a></li><li><a href="#trabajo">Piscinas</a></li><li><a href="#trabajo">Galpones</a></li></ul></div><div><p class="section-eyebrow">Empresa</p><ul class="footer-links"><li><a href="#porque">Por qué elegirnos</a></li><li><a href="#sistema">Nuestro sistema</a></li><li><a href="#proceso">Proceso</a></li><li><a href="#testimonios">Testimonios</a></li></ul></div><div><p class="section-eyebrow">Contacto</p><ul class="footer-links"><li><a href="tel:+59897856649">+598 97 856-649</a></li><li><a href="mailto:Modulhorm6@gmail.com">Modulhorm6@gmail.com</a></li><li>Atención Lun-Vie 9:00–18:00</li></ul></div></div><div class="footer-bottom">© 2026 ModulHorm. Todos los derechos reservados. <a href="/admin.html" style="color:inherit; text-decoration:underline;">Panel de administración</a></div></footer><div class="notification" id="notification">Mensaje enviado con éxito. Te contactaremos pronto.</div></div>
+  <script>
+    const form = document.getElementById('contactForm');
+    const notification = document.getElementById('notification');
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const nombre = document.getElementById('fNombre').value.trim();
+      const telefono = document.getElementById('fTelefono').value.trim();
+      const email = document.getElementById('fEmail').value.trim();
+      const tipoProyecto = document.getElementById('fTipo').value;
+      const mensaje = document.getElementById('fMensaje').value.trim();
+      if (!nombre || !email || !tipoProyecto) {
+        alert('Por favor completá nombre, correo y tipo de proyecto.');
+        return;
+      }
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ nombre, telefono, email, tipoProyecto, mensaje })
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || 'Error en el envío.');
+        showNotification('✅ Mensaje enviado. Nuestro equipo te contactará pronto.');
+        form.reset();
+      } catch (error) {
+        alert(error.message || 'No se pudo enviar el formulario.');
+      }
+    });
+    function showNotification(message) {
+      notification.textContent = message;
+      notification.classList.add('show');
+      setTimeout(() => notification.classList.remove('show'), 4500);
+    }
+  </script>
+</body>
+</html>

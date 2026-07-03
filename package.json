@@ -1,0 +1,15 @@
+﻿{
+  "name": "formastruct-backend",
+  "version": "1.0.0",
+  "description": "Backend con SQLite para el sitio FormaStruct",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.4",
+    "nodemailer": "^7.0.0",
+    "sqlite3": "^5.1.6"
+  }
+}
