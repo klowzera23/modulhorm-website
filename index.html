@@ -266,7 +266,7 @@
         <div class="contact-panel"><div class="contact-card"><p class="section-eyebrow">Contacto</p><h2 class="contact-title">Hablemos de tu próximo proyecto</h2><p class="contact-copy">Contanos qué necesitás construir y te prepararemos una propuesta con experiencia, calidad constructiva y plazo real.</p><div class="contact-list"><div class="contact-item"><span class="contact-icon">📞</span><p><strong>Teléfono / WhatsApp</strong><br>+598 97 856 649</p></div><div class="contact-item"><span class="contact-icon">✉️</span><p><strong>Correo</strong><br>modulhorm6@gmail.com</p></div><div class="contact-item"><span class="contact-icon">📍</span><p><strong>Operamos en</strong><br> Todo Uruguay</p></div></div></div><form class="contact-card" id="contactForm"><div class="form-field"><label for="fNombre">Nombre</label><input id="fNombre" name="nombre" type="text" placeholder="Tu nombre"></div><div class="form-field"><label for="fTelefono">Teléfono</label><input id="fTelefono" name="telefono" type="tel" placeholder="+598 97 ..."></div><div class="form-field"><label for="fEmail">Correo electrónico</label><input id="fEmail" name="email" type="email" placeholder="tu@email.com"></div><div class="form-field"><label for="fTipo">Tipo de proyecto</label><select id="fTipo" name="tipoProyecto"><option value="" selected disabled>Seleccioná una opción</option><option>Vivienda</option><option>Galpón</option><option>Muro</option><option>Piscina</option><option>Estructura de hormigón</option><option>Proyecto personalizado</option></select></div><div class="form-field"><label for="fMensaje">Mensaje</label><textarea id="fMensaje" name="mensaje" placeholder="Contanos los detalles de tu obra..."></textarea></div><button type="submit" class="form-submit">Quiero Construir Mi Proyecto</button></form></div>
       </section>
     </main>
-    <footer class="footer"><div class="footer-grid"><div class="footer-brand"><div class="brand-name">ModulHorm</div><p>Empresa constructora especializada en sistemas de moldes de alta precisión. Creamos obras sólidas, eficientes y con terminación premium.</p></div><div><p class="section-eyebrow">Servicios</p><ul class="footer-links"><li><a href="#trabajo">Viviendas</a></li><li><a href="#trabajo">Muros</a></li><li><a href="#trabajo">Piscinas</a></li><li><a href="#trabajo">Galpones</a></li></ul></div><div><p class="section-eyebrow">Empresa</p><ul class="footer-links"><li><a href="#porque">Por qué elegirnos</a></li><li><a href="#sistema">Nuestro sistema</a></li><li><a href="#proceso">Proceso</a></li><li><a href="#testimonios">Testimonios</a></li></ul></div><div><p class="section-eyebrow">Contacto</p><ul class="footer-links"><li><a href="tel:+59897856649">+598 97 856-649</a></li><li><a href="mailto:Modulhorm6@gmail.com">Modulhorm6@gmail.com</a></li><li>Atención Lun-Vie 9:00–18:00</li></ul></div></div><div class="footer-bottom">© 2026 ModulHorm. Todos los derechos reservados. <a href="/admin.html" style="color:inherit; text-decoration:underline;">Panel de administración</a></div></footer><div class="notification" id="notification">Mensaje enviado con éxito. Te contactaremos pronto.</div></div>
+    <footer class="footer"><div class="footer-grid"><div class="footer-brand"><div class="brand-name">ModulHorm</div><p>Empresa constructora especializada en sistemas de moldes de alta precisión. Creamos obras sólidas, eficientes y con terminación premium.</p></div><div><p class="section-eyebrow">Servicios</p><ul class="footer-links"><li><a href="#trabajo">Viviendas</a></li><li><a href="#trabajo">Muros</a></li><li><a href="#trabajo">Piscinas</a></li><li><a href="#trabajo">Galpones</a></li></ul></div><div><p class="section-eyebrow">Empresa</p><ul class="footer-links"><li><a href="#porque">Por qué elegirnos</a></li><li><a href="#sistema">Nuestro sistema</a></li><li><a href="#proceso">Proceso</a></li><li><a href="#testimonios">Testimonios</a></li></ul></div><div><p class="section-eyebrow">Contacto</p><ul class="footer-links"><li><a href="tel:+59897856649">+598 97 856-649</a></li><li><a href="https://wa.me/59897856649?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20de%20construcci%C3%B3n." target="_blank">💬 WhatsApp</a></li><li><a href="mailto:Modulhorm6@gmail.com">Modulhorm6@gmail.com</a></li><li>Atención Lun-Vie 9:00–18:00</li></ul></div></div><div class="footer-bottom">© 2026 ModulHorm. Todos los derechos reservados. <a href="/admin.html" style="color:inherit; text-decoration:underline;">Panel de administración</a></div></footer><div class="notification" id="notification">Mensaje enviado con éxito. Te contactaremos pronto.</div></div>
   <script>
     const form = document.getElementById('contactForm');
     const notification = document.getElementById('notification');
@@ -301,5 +301,41 @@
       setTimeout(() => notification.classList.remove('show'), 4500);
     }
   </script>
+
+  <!-- WhatsApp Button Flotante -->
+  <style>
+    .whatsapp-button {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+      z-index: 98;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+    }
+    .whatsapp-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    }
+    .whatsapp-button svg {
+      width: 32px;
+      height: 32px;
+    }
+  </style>
+
+  <a href="https://wa.me/59897856649?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20de%20construcci%C3%B3n." class="whatsapp-button" title="Contactar por WhatsApp" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.946 1.347l-.355.201-3.68-.96.978 3.59-.231.364a9.758 9.758 0 -1.51-13.528l.364-.232 3.592.978-.96 3.68.201.353a9.87 9.87 0 1.347 4.946z"/>
+    </svg>
+  </a>
+
 </body>
 </html>
