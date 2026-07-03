@@ -43,7 +43,7 @@ async function sendContactEmail(data) {
     return;
   }
 
-  const to = process.env.CONTACT_TO || 'modulhorm@gmail.com';
+  const to = process.env.CONTACT_TO || 'modulhorm6@gmail.com';
   const subject = `Nuevo contacto desde la web - ${data.tipoProyecto}`;
   const html = `
     <h2>Nuevo mensaje de contacto</h2>
