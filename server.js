@@ -56,7 +56,7 @@ async function sendContactEmail(data) {
   `;
 
   await transporter.sendMail({
-    from: process.env.SMTP_FROM || 'modulhorm@gmail.com',
+    from: process.env.SMTP_FROM || 'modulhorm6@gmail.com',
     to,
     subject,
     html
